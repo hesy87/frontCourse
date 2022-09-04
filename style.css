@@ -36,11 +36,16 @@ body {
     background: var(--color-social-button);
     border-radius: 20px;
     border: 0;
-    width: 15rem;
+    width: 13rem;
     height: 2.5rem;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
+}
+
+.buttonStyle:hover {
+  background:#a5d4ff ;
+  transition: all 0.5s ease-in-out;
 }
 
 .social>div>i {
@@ -141,7 +146,7 @@ body {
 }
 
 .banner {
-    overflow-x: hidden ;
+    overflow: hidden ;
     margin-top: 0;
     position: relative;
 }
@@ -149,4 +154,20 @@ body {
 .banner>div {
     position: absolute;
     top: 0;
+}
+
+.text {
+    margin-left: 5rem;
+}
+
+.text>h1 {
+    font-size: 60px;
+    margin-bottom: 4rem;
+}
+
+.text>h3 {
+ font-size: 24px;
+ color: #777777;
+ font-style: italic;
+ margin-bottom: 4rem;
 }
