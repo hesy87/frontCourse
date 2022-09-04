@@ -134,6 +134,9 @@ body {
 }
 .menu {
     background: #1872C5;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
 }
 
 .menu>ul {
@@ -384,4 +387,136 @@ body {
     font-size: 16px;
     font-weight: bold;
     transform: rotate(-90deg);
+}
+
+/************************** manufacture **************************/
+
+.manf {
+    margin-top: 4rem;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.manf>img {
+    width: 100vw;
+    height: 80vh;
+}
+
+.manf::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 10vh;
+    width: 100%;
+    opacity: 0.5;
+    background: #fff;
+}
+
+.manf::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    display: block;
+    height: 10vh;
+    width: 100%;
+    opacity: 0.5;
+    background: #fff;
+}
+
+
+.manfPic {
+    position: absolute;
+    top: 0;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+    background: rgba(1, 1, 1, 0.705);
+}
+
+.manfPic>h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.manfPic>div>img {
+    margin: 2rem 2rem 2rem 0;
+}
+
+/************************** testomonial **************************/
+.testimonial {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.profile {
+    display: flex;
+    border-bottom: 1px solid #b1b1b15d;
+    margin-bottom: 1rem;
+}
+
+.testCardParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testCard {
+    width: 19.5vw;
+    height: 40vh;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.profile>img {
+    border-radius: 50%;
+    margin: 0 1rem 1rem 0 ;
+}
+
+.testimonial>h1 {
+    font-size: 48px;
+    font-family: "OpenSans-B";
+    font-weight: bold;
+    color: #313132;
+}
+
+.profile>div>p:nth-child(1) {
+    font-size: 18px;
+    color: #42a4ff;
+    font-weight: bold;
+    font-family: "OpenSans-B";
+}
+
+.profile>div>p:nth-child(2) {
+    color: #b1b1b1;
+    font-size: 14px;
+}
+
+.testCard>p {
+    color: #313132e7;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.arrow {
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-top: 1px solid #b1b1b15d;
+    border-left: 1px solid #b1b1b15d;
+    transform: rotate(45deg);
+    top: 23%;
+    left: 5%;
+    background: white;
 }
