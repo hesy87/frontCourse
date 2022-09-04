@@ -179,7 +179,7 @@ body {
 
 .banner>img {
     width: 100vw;
-    height: auto;
+    height: 80vh;
 }
 
 .banner {
@@ -234,4 +234,154 @@ body {
 .text>button {
     height: 3rem;
     font-size: 14px;
+}
+
+/************************* numbers **********************/
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.numbers>div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers>div>h1 {
+    font-size: 40px;
+    font-family: "OpenSans-B";
+    font-weight: bold;
+    margin: 1.5rem 0 1.5rem 0 ;
+}
+
+.numbers>div>h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cardLine {
+    margin-bottom: 1rem;
+    height: 2px;
+    background: #1872C5;
+    width: 2rem;
+}
+
+.numbers>div>img {
+    height: 5rem;
+}
+
+/************************* our service **********************/
+
+.ourService {
+    position: relative;
+    height: 37vh;
+    background: #237ED4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourService>h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.ourService>h3 {
+    font-size: 18px;
+}
+
+.shape {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: #237ED4;
+    transform: rotate(45deg);
+    bottom: -1rem;
+}
+
+.viewService {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.viewService>div {
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    width: 20vw;
+    height: 60vh;
+    margin: 4rem 1.5rem 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewService .cardLine {
+    margin-top: 2rem;
+    background: #42a4ff;
+}
+
+.viewService>div>h3 {
+    color: #42a4ff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 35%;
+}
+
+.viewService>div>img {
+    margin-top: 1rem;
+    height: 60%;
+}
+
+.viewSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewService>div:nth-child(1) {
+    background: #42a4ff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -2%;
+    top: 30%;
+}
+
+.viewService>div:nth-child(1)>i {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(90deg);
+}
+
+.viewService>div:last-child {
+    background: #42a4ff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -2%;
+    top: 30%;
+}
+
+.viewService>div:last-child>i {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-90deg);
 }
