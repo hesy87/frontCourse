@@ -11,6 +11,10 @@
     font-family: "OpenSans";
     src: url(./fonts/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: "OpenSans-B";
+    src: url(./fonts/OpenSans-Bold.ttf);
+}
 
 :root {
     --color-social-back : #084884;
@@ -22,6 +26,8 @@ body {
     font-family: "OpenSans";
     font-size: 14px;
 }
+
+/************************** social header **************************/
 
 .social {
     background: var(--color-social-back);
@@ -39,7 +45,7 @@ body {
     width: 13rem;
     height: 2.5rem;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -49,8 +55,8 @@ body {
 }
 
 .social>div>i {
-    margin-right: 0.75rem;
-    font-size: 16px;
+    margin-right: 1rem;
+    font-size: 18px;
     color: #a5d4ff;
     cursor: pointer;
 }
@@ -60,6 +66,12 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+.social>div:nth-child(1) {
+    margin-left: -1rem;
+}
+
+/************************** menu **************************/
+
 .service {
     display: flex;
     justify-content: space-around;
@@ -67,21 +79,10 @@ body {
     background: #1872C5;
 }
 
-.circle1 {
-    background: #084884;
-    border-radius: 50%;
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    height: 3rem;
-    align-items: center;
-    margin-right: 0.5rem;
-    padding: 0.75rem;
-}
 .circle {
     background: #084884;
     border-radius: 50%;
-    width: 5rem;
+    width: 3rem;
     display: flex;
     justify-content: center;
     height: 3rem;
@@ -92,16 +93,15 @@ body {
 .circle>i {
     color: white;
     font-size: 20px;
+    padding: 1rem;
 }
 
-.circle1>img {
-   width: 25px;
-   height: 25px;
-   filter: invert(100%);
+.fa-location-dot {
+    padding: 1rem;
 }
 
 .service>div {
-    width: 20vw;
+    width: 18vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ body {
 .service {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .service>div:hover {
@@ -121,6 +121,17 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+.lineDiv {
+    background: #1872C5;
+    display: flex;
+    justify-content: center;
+}
+.line {
+    width: 86vw;
+    height: 0.1rem;
+    background: white;
+    background: #42A4FF;
+}
 .menu {
     background: #1872C5;
 }
@@ -138,7 +149,33 @@ body {
 .menu>ul>li>a {
     color: white;
     font-weight: bold;
+    font-size: 16px;
 }
+
+.menu>ul>li:nth-child(1)>a {
+    color:#a5d4ff
+}
+
+.menu>ul>li>i {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.menu>ul>li:nth-child(1)>i {
+    color:#a5d4ff
+}
+
+.menu>ul>li {
+    cursor: pointer;
+}
+
+.menu>ul>li:hover>a,.menu>ul>li:hover>i {
+    color:#a5d4ff;
+    transition: all 0.3s ease-in-out;
+}
+
+/************************** slider **************************/
+
 
 .banner>img {
     width: 100vw;
@@ -161,13 +198,40 @@ body {
 }
 
 .text>h1 {
+    font-family: "OpenSans-B";
+    margin-top: 1rem;
     font-size: 60px;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .text>h3 {
  font-size: 24px;
  color: #777777;
  font-style: italic;
- margin-bottom: 4rem;
+ margin-bottom: 3rem;
+}
+
+.slider {
+    margin-top: 1.5rem;
+}
+
+.slider>i {
+    font-size:12px ;
+    margin-right: 1rem;
+    color: #b3b3b3;
+}
+
+.slider>i:hover {
+    color: #42A4FF;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.text>button:hover {
+    background: #136CBF;
+}
+
+.text>button {
+    height: 3rem;
+    font-size: 14px;
 }
