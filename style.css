@@ -27,6 +27,7 @@
 body {
   font-family: "OpenSans";
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 /************************** social header **************************/
@@ -527,7 +528,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 280vh;
+  height: 260vh;
   background: #f9f9f9;
 }
 
@@ -539,8 +540,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 20vh);
+  grid-template-columns: repeat(3, 27vw);
+  grid-template-rows: repeat(10, 15vh);
   text-align: center;
   gap: 2rem;
 }
@@ -558,39 +559,133 @@ body {
 
 .grid > div:nth-child(1) {
   grid-column: 1/2;
-  width: 30vw;
   grid-row: 1/5;
+  height: 86vh;
 }
 
 .grid > div:nth-child(4) {
   grid-column: 1/2;
-  grid-row: 5/9;
+  grid-row: 6/10;
+  height: 86vh;
+  margin-top: -3rem;
 }
 
 .grid > div:nth-child(2) {
   grid-column: 2/3;
   grid-row: 1/6;
-}
-
-.blogText>h3 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "OpenSans-B";
-    color: #42a4ff;
+  height: 93vh;
 }
 
 
 .grid > div:nth-child(5) {
   grid-column: 2/3;
   grid-row: 6/11;
+  height: 93vh;
 }
 
 .grid > div:nth-child(3) {
   grid-column: 3/4;
   grid-row: 1/4;
+  height: 82vh;
 }
 
 .grid > div:nth-child(6) {
   grid-column: 3/4;
-  grid-row: 4/7;
+  grid-row: 6/10;
+  height: 82vh;
+  margin-top: -5rem;
+}
+
+.blogText>h3 {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "OpenSans-B";
+  color: #42a4ff;
+}
+
+.blogText>h4:nth-child(2) {
+  font-size: 14px;
+  font-style: italic;
+  color: #b1b1b1;
+  font-family: "OpenSans";
+  font-weight: 300;
+  text-align: left;
+  padding: 1rem 0 0 0;
+}
+
+.blogText>p {
+  color: #313132;
+  font-size: 14px;
+  text-align: justify;
+  padding: 1rem 0 1rem 0;
+}
+
+.blogText>h4:nth-child(4) {
+  font-size: 14px;
+  font-style: italic;
+  color: #42a4ff;
+  font-family: "OpenSans";
+  font-weight: 300;
+  text-align: left;
+}
+
+.blogText {
+  width: 23vw;
+  margin-left: 1.75rem;
+}
+
+/********************** footer ****************************/
+
+.copy {
+  padding-left: 3rem;
+  background: #313132;
+  height: 5vh;
+  color: #777777;
+  font-size: 14px;
+}
+
+footer {
+  height: 60vh;
+  background: #313132;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serv {
+  margin-left: 3rem;
+  width: 20vw;
+  height: 30vh;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.News {
+  width: 30vw;
+  height: 30vh;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #777777;
+}
+
+.cont {
+  width: 45vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.cont>div {
+  display: flex;
 }
