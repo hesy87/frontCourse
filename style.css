@@ -650,42 +650,105 @@ footer {
   height: 60vh;
   background: #313132;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .serv {
   margin-left: 3rem;
   width: 20vw;
-  height: 30vh;
-  border: 1px solid white;
+  height: 28vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.serv>div>i {
+  color: #777777;
+  font-size: 20px;
+  margin-right: .6rem;
 }
 
 .News {
-  width: 30vw;
+  width: 22vw;
   height: 30vh;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   color: #777777;
 }
 
-.cont {
-  width: 45vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
+.News>h1, .cont>h1 {
+  font-size: 22px;
+  color: white;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #777777;
 }
 
-.cont>div {
+.email {
+  position: relative;
+}
+
+.email>input[type="email"] {
+  padding: .77rem;
+  width: 22vw;
+  border-radius: 20px;
+  border: 0;
+}
+
+.email>input[type="submit"] {
+  position: absolute;
+  left: 71%;
+  padding: .75rem;
+  background:#42a4ff;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "OpenSans-B";
+}
+
+input[type="email"]::placeholder {
+  color: #999;
+  font-size: 12px;
+  padding-left: 0.5rem;
+  font-family: "OpenSans";
+}
+
+.cont {
+  width: 35vw;
+  height: 30vh;
+  margin-left: 2rem;
+}
+
+.contFirst {
+  margin-top: 1rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contFirst>div {
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  margin-bottom: 1rem;
+}
+
+.contFirst>div>i {
+  color: white;
+  margin-right: 1rem;
+  font-size: 20px;
+}
+
+.contFirst>div>p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.clock {
+  margin-left: 2rem;
 }
