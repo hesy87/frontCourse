@@ -45,11 +45,12 @@ body {
   background: var(--color-social-button);
   border-radius: 20px;
   border: 0;
-  width: 13rem;
-  height: 2.5rem;
+  width: 15vw;
+  height: 6vh;
   color: white;
   font-size: 12px;
   font-weight: bold;
+  margin-right: -2rem;
 }
 
 .buttonStyle:hover {
@@ -60,8 +61,8 @@ body {
 
 .social > div > a> i {
   margin-right: 1rem;
-  font-size: 18px;
-  color: #a5d4ff;
+  font-size: 16px;
+  color: #42A4FF;
   cursor: pointer;
 }
 
@@ -75,12 +76,20 @@ body {
 }
 
 /************************** menu **************************/
-
 .service {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   background: #1872c5;
+}
+
+.logo {
+ transform: translateX(1.5rem);
+}
+
+.bbb {
+  width: 10vw !important;
 }
 
 .circle {
@@ -109,20 +118,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: 21vh;
   color: #a5d4ff;
 }
 
-.service {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.service > div:nth-child(1):hover,.service > div:nth-child(3):hover,.service > div:nth-child(5):hover {
+.Hov:hover {
   color: white;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.tel>a {
+  color: #a5d4ff;
 }
 
 .lineDiv {
@@ -154,17 +166,23 @@ body {
 
 .menu > ul > li > a {
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .menu > ul > li:nth-child(1) > a {
   color: #a5d4ff;
 }
 
+.menu > ul > li:nth-child(1) {
+  margin-left: 1rem;
+}
+
 .menu > ul > li > i {
   color: white;
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
+  font-size: 12px;
 }
 
 .menu > ul > li:nth-child(1) > i {
@@ -182,17 +200,19 @@ body {
 }
 
 .search {
-  width: 10vw;
+  width: 14vw;
   text-align: end;
   margin-right: 0.7rem;
-  font-size: 20px;
+}
+.search>i {
+  font-size: 18px !important;
 }
 
 /************************** slider **************************/
 
 .banner > img {
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
 }
 
 .banner {
@@ -212,17 +232,18 @@ body {
 
 .text > h1 {
   font-family: "OpenSans-B";
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 60px;
   margin-bottom: 3rem;
   color: #313132;
+  line-height: 1.1;
 }
 
 .text > h3 {
   font-size: 24px;
   color: #777777;
   font-style: italic;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   font-weight: 400;
 }
 
@@ -242,6 +263,10 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.active {
+  color: #42a4ff !important;
+}
+
 .text > button:hover {
   background: #136cbf;
 }
@@ -249,6 +274,9 @@ body {
 .text > button {
   height: 3rem;
   font-size: 14px;
+  border-radius: 30px;
+  font-family: "OpenSans-B";
+  width: 17vw;
 }
 
 /************************* numbers **********************/
@@ -257,7 +285,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 75vh;
 }
 
 .numbers > div {
@@ -288,7 +316,7 @@ body {
 }
 
 .numbers > div > img {
-  height: 5rem;
+  height: 3rem;
 }
 
 /************************* our service **********************/
@@ -340,13 +368,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 
 .viewService > div:hover {
   box-shadow: 0px 2px 10px 0px rgb(19 108 191 / 20%);
   border-color: transparent;
-  transition: all 0.3s ease-in-out;
 }
 
 .viewService .cardLine {
@@ -382,6 +410,7 @@ body {
   position: absolute;
   left: -2%;
   top: 30%;
+  box-shadow: 0px 2px 10px 0px rgb(19 108 191 / 31%)
 }
 
 .viewService > div:nth-child(1):hover, .viewService > div:last-child:hover {
@@ -404,6 +433,7 @@ body {
   position: absolute;
   right: -2%;
   top: 30%;
+  box-shadow: 0px 2px 10px 0px rgb(19 108 191 / 31%)
 }
 
 .viewService > div:last-child > i {
@@ -411,6 +441,16 @@ body {
   font-size: 16px;
   font-weight: bold;
   transform: rotate(-90deg);
+}
+
+.viewSec>.buttonStyle {
+  font-family: "OpenSans";
+  font-size: 14px;
+  width: 17vw;
+  height: 8vh;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 30px !important;
 }
 
 .viewSec>.buttonStyle:hover {
@@ -694,6 +734,7 @@ body {
 }
 
 footer {
+  margin-top: -5px;
   height: 60vh;
   background: #313132;
   display: flex;
@@ -808,4 +849,8 @@ input[type="email"]::placeholder {
 
 .clock {
   margin-left: 2rem;
+}
+
+.map {
+  width: 99vw;
 }
