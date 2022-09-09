@@ -22,6 +22,17 @@
   --color-social-back: #084884;
   --color-social-font: #a5d4ff;
   --color-social-button: #42a4ff;
+  --font-size-12:0.857rem;
+  --font-size-16:1.143;
+  --font-size-14:1rem;
+  --font-size-20:1.429rem;
+  --font-size-18:1.286rem;
+  --font-size-60:4.286rem;
+  --font-size-24:1.714rem;  
+  --font-size-15:1.071rem;  
+  --font-size-30:2.143rem;  
+  --font-size-40:2.857rem;  
+  --font-size-48:3.429rem;  
 }
 
 body {
@@ -43,12 +54,12 @@ body {
 
 .buttonStyle {
   background: var(--color-social-button);
-  border-radius: 20px;
+  border-radius: var(--font-size-20);
   border: 0;
   width: 15vw;
   height: 6vh;
   color: white;
-  font-size: 12px;
+  font-size: 0.857rem;
   font-weight: bold;
   margin-right: -2rem;
 }
@@ -61,7 +72,7 @@ body {
 
 .social > div > a> i {
   margin-right: 1rem;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   color: #42A4FF;
   cursor: pointer;
 }
@@ -105,7 +116,7 @@ body {
 
 .circle > i {
   color: white;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   padding: 1rem;
 }
 
@@ -167,7 +178,7 @@ body {
 .menu > ul > li > a {
   color: white;
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   letter-spacing: 1px;
 }
 
@@ -182,7 +193,7 @@ body {
 .menu > ul > li > i {
   color: white;
   margin-left: 0.2rem;
-  font-size: 12px;
+  font-size: var(--font-size-12);
 }
 
 .menu > ul > li:nth-child(1) > i {
@@ -205,7 +216,7 @@ body {
   margin-right: 0.7rem;
 }
 .search>i {
-  font-size: 18px !important;
+  font-size: var(--font-size-18) !important;
 }
 
 /************************** slider **************************/
@@ -233,14 +244,14 @@ body {
 .text > h1 {
   font-family: "OpenSans-B";
   margin-top: 2rem;
-  font-size: 60px;
+  font-size:var(--font-size-40);
   margin-bottom: 3rem;
   color: #313132;
   line-height: 1.1;
 }
 
 .text > h3 {
-  font-size: 24px;
+  font-size: var(--font-size-24);
   color: #777777;
   font-style: italic;
   margin-bottom: 2.5rem;
@@ -252,7 +263,7 @@ body {
 }
 
 .slider > i {
-  font-size: 12px;
+  font-size: var(--font-size-12);
   margin-right: 1rem;
   color: #b3b3b3;
 }
@@ -273,8 +284,8 @@ body {
 
 .text > button {
   height: 3rem;
-  font-size: 15px;
-  border-radius: 30px;
+  font-size:var(--font-size-15);
+  border-radius: var(--font-size-30);
   font-family: "OpenSans-B";
   width: 17vw;
 }
@@ -297,14 +308,14 @@ body {
 }
 
 .numbers > div > h1 {
-  font-size: 40px;
+  font-size: var(--font-size-40);
   font-family: "OpenSans-B";
   font-weight: bold;
   margin: 1.5rem 0 1.5rem 0;
 }
 
 .numbers > div > h3 {
-  font-size: 18px;
+  font-size: var(--font-size-18);
   font-weight: normal;
 }
 
@@ -333,13 +344,13 @@ body {
 }
 
 .ourService > h1 {
-  font-size: 48px;
+  font-size: var(--font-size-48);
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .ourService > h3 {
-  font-size: 18px;
+  font-size: var(--font-size-18);
 }
 
 .shape {
@@ -386,7 +397,7 @@ body {
 .viewService > div > h3 {
   color: #42a4ff;
   text-align: center;
-  font-size: 24px;
+  font-size: var(--font-size-24);
   font-weight: bold;
   height: 35%;
 }
@@ -421,7 +432,7 @@ body {
 
 .viewService > div:nth-child(1) > i {
   color: white;
-  font-size: 16px;
+  font-size:var(--font-size-16);
   font-weight: bold;
   transform: rotate(90deg);
 }
@@ -439,19 +450,19 @@ body {
 
 .viewService > div:last-child > i {
   color: white;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-weight: bold;
   transform: rotate(-90deg);
 }
 
 .viewSec>.buttonStyle {
   font-family: "OpenSans";
-  font-size: 14px;
+  font-size: var(--font-size-14);
   width: 17vw;
   height: 8vh;
   color: #ffffff;
   letter-spacing: 1px;
-  border-radius: 30px !important;
+  border-radius: var(--font-size-30) !important;
 }
 
 .viewSec>.buttonStyle:hover {
@@ -514,7 +525,7 @@ body {
 
 
 .manfPic > h1 {
-  font-size: 48px;
+  font-size: var(--font-size-48);
   font-weight: bold;
   color: white;
   margin-bottom: 2rem;
@@ -566,7 +577,7 @@ body {
 }
 
 .testimonial > h1 {
-  font-size: 48px;
+  font-size: var(--font-size-48);
   font-family: "OpenSans-B";
   font-weight: bold;
   color: #313132;
@@ -574,7 +585,7 @@ body {
 }
 
 .profile > div > p:nth-child(1) {
-  font-size: 18px;
+  font-size: var(--font-size-18);
   color: #42a4ff;
   font-weight: bold;
   font-family: "OpenSans-B";
@@ -582,13 +593,13 @@ body {
 
 .profile > div > p:nth-child(2) {
   color: #b1b1b1;
-  font-size: 14px;
+  font-size: var(--font-size-14);
 }
 
 .testCard > p {
   color: #313132e7;
   font-style: italic;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   line-height: 1.5;
 }
 
@@ -617,7 +628,7 @@ body {
 
 .blog > h1 {
   margin-top: 5rem;
-  font-size: 48px;
+  font-size: var(--font-size-48);
   font-weight: bold;
   font-family: "OpenSans-B";
 }
@@ -684,7 +695,7 @@ body {
 .blogText>h3 {
   margin-top: 1rem;
   text-align: left;
-  font-size: 18px;
+  font-size: var(--font-size-18);
   font-weight: bold;
   font-family: "OpenSans-B";
   color: #42a4ff;
@@ -697,7 +708,7 @@ body {
 }
 
 .blogText>h4:nth-child(2) {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-style: italic;
   color: #b1b1b1;
   font-family: "OpenSans";
@@ -714,13 +725,13 @@ body {
 
 .blogText>p {
   color: #313132;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   text-align: justify;
   padding: 1rem 0 1rem 0;
 }
 
 .blogText>h4:nth-child(4) {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-style: italic;
   color: #42a4ff;
   font-family: "OpenSans";
@@ -731,7 +742,7 @@ body {
 }
 
 .blogText>h4:nth-child(5) {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-style: italic;
   color: #42a4ff;
   font-family: "OpenSans";
@@ -750,8 +761,8 @@ body {
 .blog > .buttonStyle {
   width: 19vw;
   height: 8vh;
-  border-radius: 30px;
-  font-size: 15px;
+  border-radius: var(--font-size-30);
+  font-size: var(--font-size-15);
 }
 
 /********************** footer ****************************/
@@ -761,7 +772,7 @@ body {
   background: #313132;
   height: 7vh ;
   color: #777777;
-  font-size: 14px;
+  font-size: var(--font-size-14);
 }
 
 footer {
@@ -788,7 +799,7 @@ footer {
 
 .serv>div>a>i {
   color: #777777;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   margin-right: 1rem;
 }
 
@@ -810,7 +821,7 @@ footer {
 }
 
 .News>h1, .cont>h1 {
-  font-size: 22px;
+  font-size: var(--font-size-20);
   color: white;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #777777;
@@ -823,7 +834,7 @@ footer {
 .email>input[type="email"] {
   padding: .77rem;
   width: 22vw;
-  border-radius: 20px;
+  border-radius: var(--font-size-20);
   border: 0;
 }
 
@@ -836,16 +847,16 @@ footer {
   width: 7vw;
   height: 6.4vh;
   border: 0;
-  border-radius: 20px;
+  border-radius: var(--font-size-20);
   overflow: hidden;
-  font-size: 12px;
+  font-size: var(--font-size-12);
   font-weight: bold;
   font-family: "OpenSans-B";
 }
 
 input[type="email"]::placeholder {
   color: #999;
-  font-size: 12px;
+  font-size: var(--font-size-12);
   padding-left: 0.5rem;
   font-family: "OpenSans";
 }
@@ -873,11 +884,11 @@ input[type="email"]::placeholder {
 .contFirst>div>i {
   color: white;
   margin-right: 1rem;
-  font-size: 14px;
+  font-size: var(--font-size-14);
 }
 
 .contFirst>div>p {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: #777777;
 }
 
