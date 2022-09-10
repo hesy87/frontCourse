@@ -7,15 +7,16 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none !important;
+  font-size: 14px;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url(./fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: "OpenSans-B";
-  src: url(./fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.ttf);
 }
 
 :root {
@@ -37,18 +38,18 @@
 
 body {
   font-family: "OpenSans";
-  font-size: 14px;
   overflow-x: hidden;
 }
 
 /************************** social header **************************/
-
+header {
+  background: gold;
+}
 .social {
   background: var(--color-social-back);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
   color: var(--color-social-font);
 }
 
@@ -59,9 +60,8 @@ body {
   width: 15vw;
   height: 6vh;
   color: white;
-  font-size: 0.857rem;
+  font-size: var(--font-size-12);
   font-weight: bold;
-  margin-right: -2rem;
 }
 
 .buttonStyle:hover {
@@ -99,10 +99,6 @@ body {
   transform: translateX(1.5rem);
 }
 
-.bbb {
-  width: 10vw !important;
-}
-
 .circle {
   background: #084884;
   border-radius: 50%;
@@ -125,11 +121,9 @@ body {
 }
 
 .service > div {
-  width: 18vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 21vh;
   color: #a5d4ff;
 }
 
@@ -170,7 +164,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 10vh;
   align-items: center;
   margin-bottom: 0;
 }
@@ -211,7 +204,6 @@ body {
 }
 
 .search {
-  width: 14vw;
   text-align: end;
   margin-right: 0.7rem;
 }
@@ -220,11 +212,6 @@ body {
 }
 
 /************************** slider **************************/
-
-.banner > img {
-  width: 100vw;
-  height: 70vh;
-}
 
 .banner {
   overflow: hidden;
@@ -291,16 +278,11 @@ body {
 }
 
 /************************* numbers **********************/
-
 .numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65vh;
+  padding: 8rem 0 8rem 0;
 }
 
 .numbers > div {
-  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,8 +291,7 @@ body {
 
 .numbers > div > h1 {
   font-size: var(--font-size-40);
-  font-family: "OpenSans-B";
-  font-weight: bold;
+  font-family: "OpenSans";
   margin: 1.5rem 0 1.5rem 0;
 }
 
