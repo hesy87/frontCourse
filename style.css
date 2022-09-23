@@ -240,15 +240,22 @@ body {
 }
 
 .text > h3 {
-  font-size: 24px;
+  font-size: 1.7vw;
   color: #777777;
   font-style: italic;
   margin-bottom: 2.5rem;
   font-weight: 400;
 }
 
-.slider {
-  margin-top: 1.5rem;
+.bannerSection {
+  position: relative;
+}
+
+.bannerSection .slider {
+ position: absolute;
+ top: 90%;
+ left: 10%;
+
 }
 
 .slider > i {
@@ -263,10 +270,6 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.active {
-  color: #42a4ff !important;
-}
-
 .text > button:hover {
   background: #136cbf;
 }
@@ -277,6 +280,13 @@ body {
   border-radius: 30px;
   font-family: "OpenSans-B";
   width: 17vw;
+}
+#banner2 {
+  display: none;
+}
+
+#banner3 {
+  display: none;
 }
 
 /************************* numbers **********************/

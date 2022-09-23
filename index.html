@@ -74,9 +74,9 @@
         <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
       </ul>
     </div>
-    <section>
-      <!------------------------ banner -------------------->
-      <div class="banner">
+    <!------------------------ banner -------------------->
+    <section class="bannerSection">
+      <div id="banner1" class="banner">
         <img src="./img/home-slide-11.jpg" alt="" />
         <div class="text">
           <h1>
@@ -88,12 +88,37 @@
             appliance repair and service needs
           </h3>
           <button class="buttonStyle">ORDER DIAGNOSTICS</button>
-          <div class="slider">
-            <i class="fa-solid fa-circle active" ></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-          </div>
         </div>
+      </div>
+      <div id="banner2" class="banner">
+        <img src="./img/home-slide-2-1920x600.jpg" alt="" />
+        <div class="text">
+          <h1>
+            Customer Support <br />
+            Is Not a Service, <br>
+            it's an Attitude.
+          </h1>
+          <button class="buttonStyle">ORDER DIAGNOSTICS</button>
+        </div>
+      </div>
+      <div id="banner3" class="banner">
+        <img src="./img/home-slide-3-1920x600.jpg" alt="" />
+        <div class="text">
+          <h1>
+            Professional. Friendly. <br />
+            Courteous.
+          </h1>
+          <h3>
+            Service Center is ready to help with all your <br />
+            appliance repair and service needs
+          </h3>
+          <button class="buttonStyle">ORDER DIAGNOSTICS</button>
+        </div>
+      </div>
+      <div class="slider">
+        <i id="banner1on" class="fa-solid fa-circle" onclick="banner1on()"></i>
+        <i id="banner2on" class="fa-solid fa-circle" onclick="banner2on()"></i>
+        <i id="banner3on" class="fa-solid fa-circle" onclick="banner3on()"></i>
       </div>
     </section>
     <!------------------------- conter --------------------------->
@@ -411,6 +436,7 @@
       © 2022 All Rights Reserved Terms of Use and Privacy Policy
     </p>
 
+    <script src="./js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/3928fa8085.js"
       crossorigin="anonymous"
